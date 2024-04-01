@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .heading {
+                text-align: center;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+            .heading h1 {
+                color: #333333;
+                font-size: 24px;
+            }
+
+            .heading p {
+                color: #666666;
+                font-size: 16px;
+            }
+
+            .footer {
+                text-align: center;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+            .footer p {
+                color: #666666;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Welcome to the Nobook!</h1>
+            <p>This is the base page of nobook.</p>
+        </div>
+
+        {% block content %} {% endblock %}
+
+        <div class="footer">
+            <p>Thank you for visiting the Nobook!</p>
+        </div>
+    </body>
+</html>
