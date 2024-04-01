@@ -4,13 +4,65 @@
 <style>
   .welcome-heading {
     text-align: center;
-    padding: 20px;
+    gap: 20px;
+  }
+
+  .welcome-main-heading{
+    font-size: 32px;
+  }
+  .welcome-sub-heading{
+    font-size: 24px;
   }
   .welcome-body {
     text-align: center;
-    padding: 20px;
 
   }
+  .dashboard-wrapper{
+    width: 100%;
+    margin-top: 60px;
+}
+  .dashboard-img{
+    object-fit: contain;
+    width: 100%;
+
+  }
+  .message{
+    color: #cccccc;
+    text-align: center;
+  }
 </style>
-<div class="welcome-heading">You are invited to the nobook family!</div>
+<br>
+<br>
+<br>
+<div class="welcome-heading">
+    <span class="welcome-sub-heading">Hello, prakat.aerialarts !</span>
+    <br>
+    <br>
+    
+    <span class="welcome-main-heading">Welcome to <span class="yellow-text"> NoBook</span></span>
+</div>
+<div class="dashboard-wrapper">
+    <img
+    class="dashboard-img"
+    src="{{ url_for('static', filename='dashboard.png')}}"
+    alt="dashboard"
+  />
+</div>
+
+<div class="message">
+    <span>
+        Thank you for accepting the invitation to join NoBook. We are excited to have you on board.
+    </span>
+    <br>
+    <br>
+    <span>
+        You can now access your dashboard and start using NoBook.
+    </span>
+    <br>
+    <br>
+    <span>
+        If you have any questions or need help, please contact us at <span class="yellow-text">
+    </span>
+</div>
+
 {% endblock %}
