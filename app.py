@@ -4,6 +4,11 @@ app = Flask(__name__)
 
 @app.route('/email/<template_name>')
 def render_email_template(template_name):
+    
+    # function to send email
+    # send_email()
+    
+    
     return render_template(f'{template_name}.html')
 
 if __name__ == '__main__':
